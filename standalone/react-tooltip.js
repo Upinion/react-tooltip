@@ -1160,7 +1160,7 @@ var getDefaultPosition = function getDefaultPosition(effect, targetWidth, target
   var bottom = void 0;
   var left = void 0;
   var disToMouse = 3;
-  var triangleHeight = 2;
+  var triangleHeight = 6;
   var cursorHeight = 12; // Optimize for float bottom only, cause the cursor will hide the tooltip
 
   if (effect === 'float') {

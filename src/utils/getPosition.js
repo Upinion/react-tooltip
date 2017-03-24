@@ -189,7 +189,7 @@ const getDefaultPosition = (effect, targetWidth, targetHeight, tipWidth, tipHeig
   let bottom
   let left
   const disToMouse = 3
-  const triangleHeight = 2
+  const triangleHeight = 6
   const cursorHeight = 12 // Optimize for float bottom only, cause the cursor will hide the tooltip
 
   if (effect === 'float') {
