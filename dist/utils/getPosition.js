@@ -173,7 +173,7 @@ var getCurrentOffset = function getCurrentOffset(e, currentTarget, effect) {
   var targetTop = boundingClientRect.top;
   var targetLeft = boundingClientRect.left;
   var targetWidth = currentTarget.offsetWidth;
-  var targetHeight = currentTarget.offsetWidth;
+  var targetHeight = currentTarget.offsetHeight;
 
   if (effect === 'float') {
     return {
