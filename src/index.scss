@@ -4,28 +4,28 @@
     &:after {
       border-top-color: $background-color;
       border-top-style: solid;
-      border-top-width: 6px;
+      border-top-width: 5px;
     }
   }
   &.place-bottom {
     &:after {
       border-bottom-color: $background-color;
       border-bottom-style: solid;
-      border-bottom-width: 6px;
+      border-bottom-width: 5px;
     }
   }
   &.place-left {
     &:after {
       border-left-color: $background-color;
       border-left-style: solid;
-      border-left-width: 6px;
+      border-left-width: 5px;
     }
   }
   &.place-right {
     &:after {
       border-right-color: $background-color;
       border-right-style: solid;
-      border-right-width: 6px;
+      border-right-width: 5px;
     }
   }
 }
@@ -55,12 +55,12 @@
 }
 
 .__react_component_tooltip {
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 16px;
   left: -999em;
   opacity: 0;
-  padding: 8px 21px;
+  padding: 5px 15px 3px;
   position: fixed;
   pointer-events: none;
   transition: opacity 0.3s ease-out;
@@ -75,14 +75,14 @@
     position: absolute;
   }
   &.show {
-    opacity: 0.9;
+    opacity: 1;
     margin-top: 0px;
     margin-left: 0px;
     visibility: visible;
   }
   &.type-dark {
     color: #fff;
-    @include type(#222);
+    @include type(#000);
     &.border {
       @include border(#fff);
     }
@@ -133,11 +133,11 @@
       margin-left: -10px;
     }
     &:after {
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      bottom: -6px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      bottom: -4px;
       left: 50%;
-      margin-left: -8px;
+      margin-left: -5px;
     }
   }
   &.place-bottom {
@@ -150,9 +150,9 @@
       margin-left: -10px;
     }
     &:after {
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      top: -6px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: -4px;
       left: 50%;
       margin-left: -8px;
     }

@@ -387,7 +387,13 @@ class ReactTooltip extends Component {
   updatePosition () {
     const {currentEvent, currentTarget, place, effect, offset} = this.state
     const node = ReactDOM.findDOMNode(this)
-    const result = getPosition(currentEvent, currentTarget, node, place, effect, offset)
+    let currentTargetElement
+    if (currentTarget.hasAttribute('data-tip') && currentTarget.children[0].tagName.toLowerCase() === 'span') {
+      currentTargetElement = currentTarget.children[0]
+    } else {
+      currentTargetElement = currentTarget
+    }
+    const result = getPosition(currentEvent, currentTargetElement, node, place, effect, offset)
 
     if (result.isNewState) {
       // Switch to reverse placement
