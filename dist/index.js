@@ -16,7 +16,7 @@ var _class, _class2, _temp;
 
 
 var _react = require('react');
-
+var PropTypes = require('prop-types');
 var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
